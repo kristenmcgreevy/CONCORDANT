@@ -44,8 +44,12 @@ The function returns a 2 item list:
 
 #### `BackTransformDataset` #### 
 Back transform your normal transformed data to the original data scale. This function applies the inverse CDF (q-function) of each column to back-transform. It only applies the backtransformation to columns with supplied q-functions.
+
 To use this function, supply 2 arguments:
+
 `dataset`: The dataset on the gaussian scale to transform select columns back to variables on the original data scale
+
 `qfunctions`: A list of the inverse functions to apply column-wise
+
 The function returns a dataframe with original variable names and variables on the original datascale.
 
